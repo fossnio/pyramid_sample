@@ -4,26 +4,26 @@ pyramid-sample
 Getting Started
 ---------------
 
-- Change directory into your newly created project.
+- Install required system packages first.
 
-    cd pyramid_sample
+    sudo apt install python3-venv -y
 
 - Create a Python virtual environment.
 
-    python3 -m venv env
+    mkdir ~/venv
+    python3 -m venv ~/venv/pyramid_sample 
 
 - Upgrade packaging tools.
 
-    env/bin/pip install --upgrade pip setuptools
+    cd ~/venv/pyramid_sample
+    ./bin/pip install --upgrade pip setuptools
 
-- Install the project in editable mode with its testing requirements.
+- Install the project in editable mode
 
-    env/bin/pip install -e ".[testing]"
-
-- Run your project's tests.
-
-    env/bin/pytest
+    ./bin/pip install -e .
 
 - Run your project.
 
-    env/bin/pserve development.ini
+    ./bin/pserve development.ini
+
+- Open your browser to visit http://localhost:6543.
