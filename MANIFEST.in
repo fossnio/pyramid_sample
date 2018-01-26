@@ -1,0 +1,2 @@
+include *.txt *.ini *.cfg *.rst
+recursive-include pyramid_sample *.ico *.png *.css *.gif *.jpg *.txt *.js *.map *.eot *.svg *.ttf *.woff *.woff2 *.html *.xml *.jinja2
